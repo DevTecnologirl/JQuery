@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Ctrl+Play</title>
+	<script
+  src="https://code.jquery.com/jquery-3.6.1.min.js"
+  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+  crossorigin="anonymous"></script>
+  
+</head>
+<body>
+	<script type = "text/javascript">
+		function exibirElemento(tag) {
+			$(tag).show();}
+			
+		function esconderElemento(tag) {
+		$(tag).hide()}
+	</script>
+	<div>
+		Textos, imagens e tabelas
+	</div>
+	<button onclick=exibirElemento('div')> Exibir div </button>
+	<button onclick=esconderElemento('div')> Esconder div </button>
+
+</body>
+</html>
+
+<hr>
+
+<html>
+<head>
+	<title>Ctrl+Play</title>
+	<script
+  src="https://code.jquery.com/jquery-3.6.1.min.js"
+  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+  crossorigin="anonymous"></script>
+  
+</head>
+<body>
+	<script type = "text/javascript">
+		$(document).ready(function(){
+			$("p").click(function(){
+				$(this).hide()
+			})
+		})
+	</script>
+	<p> Parágrafo 1 </p>
+	<p> Parágrafo 2 </p>
+	<p> Parágrafo 3 </p>
+	
+</body>
+</html>
+
+<hr>
+
+<html>
+<head>
+	<title>Ctrl+Play</title>
+	<script
+  src="https://code.jquery.com/jquery-3.6.1.min.js"
+  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+  crossorigin="anonymous"></script>
+  
+</head>
+<body>
+	<h1> fadeOut </h1>
+	<div1> fadeOut depois fadeIn  </div1> <br><br>
+	<div2> fadeToggle (aperte mais de uma vez) </div2> <br><br>
+	<div3> fadeTo </div3> <br><br>
+	<div4> slideToggle (aperte mais de uma vez) </div4> <br> <br>
+	<script type = "text/javascript">
+		function fadeFunc(){
+			$("h1").fadeOut("slow");
+			$("div1").fadeOut("slow");
+			$("div1").fadeIn("slow");
+			$("div2").fadeToggle("slow");
+			$("div3").fadeTo("slow", 0.4);
+			$("div4").slideToggle();
+			};
+	</script>
+    <button type="button" onclick=fadeFunc()> clicar aqui </button>
+</body>
+</html>
